@@ -47,7 +47,7 @@ const ProductForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
 
-  const isEditMode = id !== "new";
+  const isEditMode = id !== "new" && id !== undefined;
 
   useEffect(() => {
     if (isEditMode) {

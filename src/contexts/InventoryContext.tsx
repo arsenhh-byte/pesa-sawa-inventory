@@ -236,8 +236,8 @@ export function InventoryProvider({ children }: { children: ReactNode }) {
         product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         product.sku.toLowerCase().includes(searchTerm.toLowerCase());
 
-      // Filter by category
-      const matchesCategory = !category || product.category === category;
+      // Filter by category - now handling the "all" value correctly
+      const matchesCategory = !category || category === "all" || product.category === category;
 
       // Filter by low stock
       const matchesLowStock = !lowStock || product.quantity <= product.reorderLevel;
