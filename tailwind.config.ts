@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom inventory app colors
+				inventory: {
+					primary: '#0D9488', // Teal
+					secondary: '#3B82F6', // Blue
+					accent: '#10B981', // Green
+					muted: '#E5E7EB', // Light gray
+					danger: '#EF4444', // Red for alerts
+					warning: '#F97316', // Orange for warnings
 				}
 			},
 			borderRadius: {
